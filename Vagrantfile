@@ -13,6 +13,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu64-14.04-trusty"
   #  config.vm.box = "opscode-ubuntu-12.04-chef11"
 
+  config.vm.define :bunnahabhain do |t|
+  end
+  
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   # config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_chef-11.4.0.box"
