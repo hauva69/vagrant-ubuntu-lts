@@ -16,5 +16,5 @@ if [ ! -e '/usr/local/sbin/godeb' ] ; then
 fi
 
 if [ ! -e '/usr/bin/go' ] ; then
-    godeb install
+    /usr/local/sbin/godeb install
 fi
