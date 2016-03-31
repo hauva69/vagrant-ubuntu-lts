@@ -18,3 +18,7 @@ fi
 if [ ! -e '/usr/bin/go' ] ; then
     /usr/local/sbin/godeb install
 fi
+
+if [ ! -e '/home/vagrant/.nvm' ] ; then
+    /usr/bin/sudo -i -u vagrant /usr/bin/curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | /usr/bin/sudo -i -u vagrant bash
+fi
