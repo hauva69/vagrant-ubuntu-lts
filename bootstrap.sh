@@ -6,7 +6,11 @@ apt-get install -y build-essential \
 	git \
 	language-pack-en \
 	language-pack-fi \
-	vim-nox
+	vim-nox \
+	python-pip
+apt-get upgrade -y
+
+pip install awscli
 
 if [ ! -e '/usr/local/sbin/godeb' ] ; then
     wget -O godeb-amd64.tar.gz https://godeb.s3.amazonaws.com/godeb-amd64.tar.gz
