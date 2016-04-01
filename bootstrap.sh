@@ -10,7 +10,9 @@ apt-get install -y build-essential \
 	python-pip
 apt-get upgrade -y
 
-pip install awscli
+pip install awscli \
+    boto \
+    boto3
 
 if [ ! -e '/usr/local/sbin/godeb' ] ; then
     wget -O godeb-amd64.tar.gz https://godeb.s3.amazonaws.com/godeb-amd64.tar.gz
