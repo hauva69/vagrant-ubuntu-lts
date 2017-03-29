@@ -2,6 +2,7 @@
 
 apt-get update
 apt-get install -y build-essential \
+        curl \
 	emacs24-nox \
 	git \
 	language-pack-en \
@@ -26,7 +27,7 @@ if [ ! -e '/usr/bin/go' ] ; then
 fi
 
 if [ ! -e '/home/vagrant/.nvm' ] ; then
-    /usr/bin/sudo -i -u vagrant /usr/bin/curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | /usr/bin/sudo -i -u vagrant bash
+    /usr/bin/sudo -i -u vagrant /usr/bin/curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | /usr/bin/sudo -i -u vagrant bash
 fi
 
 if [ ! -e '/usr/bin/docker' ] ; then

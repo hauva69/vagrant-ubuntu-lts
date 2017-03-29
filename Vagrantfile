@@ -10,8 +10,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "ubuntu64-14.04-trusty"
+  #  config.vm.box = "ubuntu64-14.04-trusty"
   #  config.vm.box = "opscode-ubuntu-12.04-chef11"
+  config.vm.box = "wholebits/ubuntu16.10-64"
 
   config.vm.define :bunnahabhain do |t|
   end
@@ -45,7 +46,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "/work", "/work"
+  config.vm.synced_folder "/workspace", "/workspace"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
